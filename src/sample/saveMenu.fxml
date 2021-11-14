@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.10301507537688442, 0.9296482412060302" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerSaveMenu">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <children>
+            <TextField fx:id="path" layoutY="6.0" maxHeight="25.0" minHeight="25.0" prefHeight="25.0" prefWidth="580.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="598.0">
+         <children>
+            <ListView fx:id="filesView" layoutX="82.0" layoutY="30.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children></AnchorPane>
+      <AnchorPane maxHeight="25.0" minHeight="25.0" prefHeight="25.0">
+         <children>
+            <Button fx:id="open" layoutX="546.0" mnemonicParsing="false" onAction="#open" text="Открыть" AnchorPane.rightAnchor="0.0" />
+            <Button layoutX="487.0" mnemonicParsing="false" onAction="#up" text="Выше" AnchorPane.rightAnchor="63.0" />
+            <Button layoutX="413.0" mnemonicParsing="false" onAction="#saveFile" text="Сохранить" AnchorPane.rightAnchor="111.0" />
+            <Button layoutX="318.0" mnemonicParsing="false" onAction="#createDir" text="Создать папку" AnchorPane.rightAnchor="185.0" />
+            <TextField fx:id="name" layoutX="55.0" prefHeight="25.0" prefWidth="234.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="309.0" />
+            <Label layoutX="7.0" layoutY="4.0" prefHeight="17.0" prefWidth="70.0" text="Name" />
+         </children>
+      </AnchorPane>
+  </items>
+</SplitPane>

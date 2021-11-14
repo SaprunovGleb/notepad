@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="757.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="706.0" prefWidth="598.0">
+         <children>
+            <MenuBar layoutY="2.0" prefHeight="25.0" prefWidth="57.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Файл">
+                  <items>
+                    <MenuItem fx:id="open" mnemonicParsing="false" onAction="#openNewFile" text="Открыть файл" />
+                        <MenuItem fx:id="save" mnemonicParsing="false" onAction="#saveThisFile" text="Сохранить файл" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <TextArea fx:id="textArea" layoutY="27.0" prefHeight="734.0" prefWidth="598.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
