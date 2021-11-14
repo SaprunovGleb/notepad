@@ -76,7 +76,7 @@ public class ControllerSaveMenu {
                 filesView.setItems(files);
             };
         } else {
-            message("Имя папки не должно содержать точку", "Ошибка");
+            message("Имя папки не должно содержать точку или быть пустым", "Ошибка");
         }
     }
 
